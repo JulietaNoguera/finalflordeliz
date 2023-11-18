@@ -1,0 +1,29 @@
+/* carrcucel*/
+
+/* CarrucelModelo.css */
+
+.container{
+    width: 800px;
+    height: 700px;
+    overflow: auto;
+  }
+  
+  .card-margin {
+    margin: 10px;
+  }
+  
+  .card-img {
+    height: 300px; /* Ajusta según sea necesario */
+  }
+  /* Media query para pantallas más pequeñas (móviles, tablets, etc.) */
+@media (max-width: 767px) {
+  .container{
+    width: 300px;
+    height: 400px;
+    overflow: auto;
+  }
+  .card-img {
+    width: 300px;
+    height:400px ;
+  }
+}
