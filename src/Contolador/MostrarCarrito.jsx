@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import Carrito from '../Vista/Carrito';
 
-const MostrarCarrito = ({productos}) => {
 
-    const [mostrarCarrito, setMostrarCarrito] = useState(false);
+const MostrarCarrito = ({ productos, setProductos }) => {
+  const [mostrarCarrito, setMostrarCarrito] = useState(false);
 
-    const mostrarOcultarCarrito = () => {
-      setMostrarCarrito(!mostrarCarrito);
-    };
+  const mostrarOcultarCarrito = () => {
+    setMostrarCarrito(!mostrarCarrito);
+  };
+
+  const eliminarProducto = (id) => {
+    // Filtrar los productos para obtener un nuevo array sin el producto que tiene el id especificado
+    const nuevosProductos = productos.filter((producto) => producto.id !== id);
+    
+    // Actualizar el estado con los nuevos productos
+    setProductos(nuevosProductos);
+  };
 
 
   return (
@@ -20,7 +28,7 @@ const MostrarCarrito = ({productos}) => {
         onClick={mostrarOcultarCarrito}
         style={{ cursor: 'pointer' }}
       />
-      {mostrarCarrito && <Carrito productos={productos}/> }
+      {mostrarCarrito && <Carrito productos={productos} onEliminarProducto={eliminarProducto}/> }
     </div>
   )
 }

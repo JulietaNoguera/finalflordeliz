@@ -80,8 +80,8 @@ const RecuadroFlor = ({ imagenes, eleccion }) => {
           </Button>
         </Card.Body>
       </Card>
-      <MostrarCarrito productos={productos}></MostrarCarrito>
-      
+      <MostrarCarrito productos={productos} setProductos={setProductos} ></MostrarCarrito>
+    
      </>
   );
 };

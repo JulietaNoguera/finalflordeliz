@@ -1,9 +1,16 @@
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Button, Nav, Navbar } from 'react-bootstrap';
+import "./vista.css";
 
-const Carrito = ({ productos }) => {
+
+const Carrito = ({ productos, onEliminarProducto }) => {
   // Calcular el precio total sumando los precios de los productos seleccionados
   const precioTotal = productos.reduce((total, producto) => total + producto.precio * producto.seleccionado, 0);
+
+  const eliminarProducto = (id) => {
+    // Llama a la función proporcionada desde el componente padre
+    onEliminarProducto(id);
+  };
 
   return (
     <>
@@ -18,6 +25,9 @@ const Carrito = ({ productos }) => {
               {productos.map((producto) => (
                 <li key={producto.id}>
                   {producto.title} - Cantidad: {producto.seleccionado} - Precio: ${producto.precio * producto.seleccionado}
+                  <Button className='botonElim'  variant="outline-danger "  size="sm"onClick={() => eliminarProducto(producto.id)}>
+                  <img src="./Img/eliminar.png" alt="Eliminar" width={10} height={10} />
+                  </Button>
                 </li>
               ))}
             </ul>
@@ -32,4 +42,3 @@ const Carrito = ({ productos }) => {
 };
 
 export default Carrito;
-
