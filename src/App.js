@@ -5,9 +5,14 @@ import SeccionVista from './Vista/SeccionVista';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ArmarVista from './Vista/ArmarVista';
 
+
 const App = () => {
+ 
+
   return (
+    
     <Router>
+     
       <Routes>
        
       <Route path="/" element={<CarrucelVista />} />

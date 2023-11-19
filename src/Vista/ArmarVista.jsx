@@ -14,6 +14,8 @@ const ArmarVista = () => {
           color:"Rojo",
           colorLazo:"Verde",
           description: 'Flores para boda.',
+          precio:"1000",
+          seleccionado:0,
         },
         {
           id: 2,
@@ -23,6 +25,8 @@ const ArmarVista = () => {
           color:"Rojo",
           colorLazo:"Rosa",
           description: 'Flores para boda.',
+          precio:"1500",
+          seleccionado:0,
         },
         {
           id: 3,
@@ -32,6 +36,8 @@ const ArmarVista = () => {
           color:"Rojo",
           colorLazo:"Morado",
           description: 'Flores para boda.',
+          precio:"1300",
+          seleccionado:0,
         }
       ]);
     
