@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-
+import './controlador.css';
 
 
 const EleccionFlor = ({ cantidad, colorFlor, colorLazo, onEleccion }) => {
@@ -18,10 +18,10 @@ const EleccionFlor = ({ cantidad, colorFlor, colorLazo, onEleccion }) => {
   };
 
   return (
-    <Form>
+    <Form className='formulario'>
       <Form.Group controlId="cantidad">
         <Form.Label>Cantidad de flores</Form.Label>
-        <Form.Control
+        <Form.Control className='formControl'
           as="select"
           value={selectedCantidad}
           onChange={(e) => setSelectedCantidad(e.target.value)}
@@ -34,7 +34,7 @@ const EleccionFlor = ({ cantidad, colorFlor, colorLazo, onEleccion }) => {
 
       <Form.Group controlId="colorFlor">
         <Form.Label>Color de la flor</Form.Label>
-        <Form.Control
+        <Form.Control  className='formControl'
           as="select"
           value={selectedColorFlor}
           onChange={(e) => setSelectedColorFlor(e.target.value)}
@@ -47,7 +47,7 @@ const EleccionFlor = ({ cantidad, colorFlor, colorLazo, onEleccion }) => {
 
       <Form.Group controlId="colorLazo">
         <Form.Label>Color del lazo</Form.Label>
-        <Form.Control
+        <Form.Control  className='formControl'
           as="select"
           value={selectedColorLazo}
           onChange={(e) => setSelectedColorLazo(e.target.value)}
@@ -58,7 +58,7 @@ const EleccionFlor = ({ cantidad, colorFlor, colorLazo, onEleccion }) => {
         </Form.Control>
       </Form.Group>
 
-      <Button className='eleccionBoton' variant="primary" onClick={handleEleccion}>
+      <Button className='eleccionBoton botonPri' size="sm"variant="primary" onClick={handleEleccion}>
         Realizar Elección
       </Button>
     </Form>

@@ -21,3 +21,19 @@
     color: #ffffff;
  
 }
+p{
+    font-family: 'Raleway','Segoe UI', Tahoma, Verdana, sans-serif;
+}
+ul {
+    font-family: 'Raleway','Segoe UI', Tahoma, Verdana, sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.seleccionados{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    background-color: #e6e6e6;
+}

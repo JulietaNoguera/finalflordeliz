@@ -53,8 +53,8 @@ const ArmarVista = () => {
 
       return (
         <>
-          <div>
-            <h1>Lista de Tarjetas</h1>
+          <div  className='presentacion'>
+            
                 <ArmarModelo 
                 imagenes={cards} 
                 cantidad={cantidades}

@@ -16,26 +16,34 @@ const Carrito = ({ productos, onEliminarProducto }) => {
     <>
       <ul>
         <li>
-          Carrito: <span className='cart-count'>{productos.length}</span>
+          <b>Carrito:</b> <span className='cart-count'>{productos.length}</span>
         </li>
         <li>
-          Productos seleccionados:
+          <b>Productos:</b>
           {productos.length > 0 ? (
             <ul>
               {productos.map((producto) => (
-                <li key={producto.id}>
-                  {producto.title} - Cantidad: {producto.seleccionado} - Precio: ${producto.precio * producto.seleccionado}
+                <li className="seleccionados"key={producto.id}>
                   <Button className='botonElim'  variant="outline-danger "  size="sm"onClick={() => eliminarProducto(producto.id)}>
                   <img src="./Img/eliminar.png" alt="Eliminar" width={10} height={10} />
                   </Button>
+                  <b>{producto.title}</b> <br/> Cantidad: {producto.seleccionado} <br/> Precio: $ {producto.precio * producto.seleccionado}
+                  
                 </li>
               ))}
             </ul>
           ) : (
-            <p>No hay productos seleccionados.</p>
+            <p><b>No hay productos seleccionados.</b></p>
           )}
         </li>
-        <li>Precio Total: ${precioTotal}</li>
+        <li className='precioTotal'><b>Precio Total:</b> ${precioTotal}</li>
+        <li>
+          {productos.length > 0 && (
+            <Button className='botonPri'  size="sm"  variant="success" >
+              Iniciar compra
+            </Button>
+          )}
+        </li>
       </ul>
     </>
   );

@@ -16,9 +16,11 @@ const SeccionModelo = ({ imagenes}) => {
 
   return (
 
-    <>    
-    <h3>Selecciona el ramo que mas te guste</h3>
-    <Container className="contSeccion">
+    <>  
+    <div>  
+    <h3>Selecciona tu ramo</h3>
+    <p>Explora nuestra exquisita colección de ramos y encuentra la expresión perfecta de tus sentimientos. Cada ramo está cuidadosamente diseñado para transmitir emociones únicas. ¿Con cuál te quedaras hoy?</p>
+    <Container className="container">
       <Row className='contRow'>
         {imagenes.map((imagen) => (
           <Col key={imagen.id} xs={12} md={3} lg={3}>
@@ -29,17 +31,18 @@ const SeccionModelo = ({ imagenes}) => {
                 alt={`imagen ${imagen.id}`}
                 
               />
-              <Card.Body>
+              <Card.Body className="carruBody">
                 <Card.Title>{imagen.title}</Card.Title>
                 <Card.Text>{imagen.description}</Card.Text>
-                <Button variant="primary" onClick={() => handleButtonClick()}>Arma tu ramo</Button>
+                <Button  className="botonPri"  size="sm"variant="primary" onClick={() => handleButtonClick()}>Arma tu ramo</Button>
               </Card.Body>
             </Card>
           </Col>
         ))}
       </Row>
     </Container>
-    </>
+    </div>
+  </>
 
   );
 };

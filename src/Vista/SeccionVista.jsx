@@ -99,8 +99,7 @@ const SeccionVista = () => {
 
   return (
     <>
-      <div>
-        <h1>Seccion de ramo</h1>
+      <div className='presentacion'>
           <SeccionModelo imagenes={imagenesFiltradas} />
       </div>
     </>
