@@ -31,8 +31,7 @@ const CarrucelVista = () => {
       return (
         <>
           <div>
-            <h1>Lista de Tarjetas</h1>
-                <CarrucelModelo imagenes={cards} />
+            <CarrucelModelo imagenes={cards} />
           </div> 
         </>
       );
