@@ -27,7 +27,7 @@ const Footer = () => {
       <Nav className="justify-content-center sesion" style={estiloNav} activeKey="/home">
         <Nav.Item className="sesion">
           <Nav.Link href="#" style={estiloNavLink}>
-           Footer
+           Flor de Lis
           </Nav.Link>
         </Nav.Item>
        
