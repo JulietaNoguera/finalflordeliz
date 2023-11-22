@@ -15,7 +15,7 @@ const Footer = () => {
 
     
   const estiloNav = {
-    backgroundColor: '#fbd3e9', // Reemplaza con el color de fondo que desees
+    backgroundColor: '#944672', // Reemplaza con el color de fondo que desees
   };
 
   const estiloNavLink = {
@@ -27,7 +27,10 @@ const Footer = () => {
       <Nav className="justify-content-center sesion" style={estiloNav} activeKey="/home">
         <Nav.Item className="sesion">
           <Nav.Link href="#" style={estiloNavLink}>
-           Flor de Lis
+           Creado Noguera Julieta / Marcelo Torres
+          </Nav.Link>
+          <Nav.Link href="#" style={estiloNavLink}>
+          CIU/UNIVERSIDAD NACIONAL DE HURLINGHAM
           </Nav.Link>
         </Nav.Item>
        

@@ -7,6 +7,7 @@ import ArmarVista from './Vista/ArmarVista';
 import Login from './Vista/Login';
 import Navegador from './Vista/Navegador';
 import Footer from './Vista/Footer';
+import ComponenteAPI from './Contolador/ComponenteAPI';
 
 const App = () => {
  
@@ -20,9 +21,11 @@ const App = () => {
        
       <Route path="/" element={<CarrucelVista />} />
       <Route path="/SeccionVista/:id" element={<SeccionVista/>} />
-      <Route path='/ArmarVista'element={<ArmarVista/>}/>
+      <Route path='/ArmaRamo'element={<ArmarVista/>}/>
+      <Route path='/Galeria'element={<ComponenteAPI/>}/>
       </Routes>
       <Footer/>
+      
     </Router>
   );
 };

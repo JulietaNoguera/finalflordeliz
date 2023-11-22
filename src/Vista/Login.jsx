@@ -18,7 +18,7 @@ const Login = () => {
 
     
   const estiloNav = {
-    backgroundColor: '#fbd3e9', // Reemplaza con el color de fondo que desees
+    backgroundColor: '#944672', // Reemplaza con el color de fondo que desees
   };
 
   const estiloNavLink = {

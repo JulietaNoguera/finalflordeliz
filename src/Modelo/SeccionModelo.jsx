@@ -11,7 +11,7 @@ const SeccionModelo = ({ imagenes}) => {
   // Función que se ejecutará al hacer clic en el botón
   const handleButtonClick = () => {
     // Navega a la ruta deseada
-    navigate(`../ArmarVista`);
+    navigate(`../ArmaRamo`);
   };
 
   return (
