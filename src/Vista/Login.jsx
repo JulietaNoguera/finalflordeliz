@@ -1,24 +1,26 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import "./vista.css";
-
-
+import "../vista.css";
 
 const Login = () => {
-    const imagenUrl = '../Img/LOGIN.png'; 
+  const imagenUrl = '../Img/LOGIN.png';
 
-    const estiloImagen = {
-      backgroundImage: `url(${imagenUrl})`,
-      backgroundSize: 'cover',
-      width: '10px', 
-      height: '10px', 
-      display: 'inline-block',
-      marginRight: '10px',
-    };
+  const estiloImagen = {
+    backgroundImage: `url(${imagenUrl})`,
+    backgroundSize: 'cover',
+    width: '10px',
+    height: '10px',
+    display: 'inline-block',
+    marginRight: '10px',
+  };
 
-    
+
   const estiloNav = {
     backgroundColor: '#944672', // Reemplaza con el color de fondo que desees
+    position: 'fixed',
+    width: '100%',
+    top: 0,
+    zIndex: 20,
   };
 
   const estiloNavLink = {
@@ -34,7 +36,7 @@ const Login = () => {
             CREAR CUENTA
           </Nav.Link>
         </Nav.Item>
-       
+
         <Nav.Item>
           <Nav.Link eventKey="link-1" style={estiloNavLink}>
             INICIAR SESIÓN

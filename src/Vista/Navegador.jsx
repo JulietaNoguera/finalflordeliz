@@ -17,6 +17,11 @@ const Navegador = () => {
     alignItems: 'center',
     paddingLeft: '5%',  // Ajusta el padding izquierdo según tus necesidades
     paddingRight: '5%', // Ajusta el padding derecho según tus necesidades
+    position: 'fixed',
+    width: '100%',
+    top: 0,
+    marginTop: '30px',
+    zIndex: 20,
   };
 
   const estiloNavLinks = {
@@ -24,9 +29,9 @@ const Navegador = () => {
   };
 
   const enlaceStyle = {
-    marginRight: '20px',  
-    color: '#629483', 
-    textDecoration: 'none', 
+    marginRight: '20px',
+    color: '#629483',
+    textDecoration: 'none',
   };
 
   return (
@@ -41,7 +46,7 @@ const Navegador = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto" style={estiloNavLinks}>
           <Link to="/Galeria" className='nombreNav' style={enlaceStyle}>
-            GALERIA    
+            GALERIA
           </Link>
           <Link to="/ArmaRamo" className='nombreNav' style={enlaceStyle}>
             ARMA TU RAMO

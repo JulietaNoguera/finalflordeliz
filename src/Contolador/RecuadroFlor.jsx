@@ -16,7 +16,7 @@ const RecuadroFlor = ({ imagenes, eleccion }) => {
   const calcularNuevoIndice = () => {
     for (let i = 0; i < imagenes.length; i++) {
       const imagen = imagenes[i];
-  
+
       if (
         imagen.cantidad === eleccion.cantidad &&
         imagen.color === eleccion.colorFlor &&
@@ -25,7 +25,7 @@ const RecuadroFlor = ({ imagenes, eleccion }) => {
         return i;
       }
     }
-  
+
     return 0;
   };
 
@@ -66,39 +66,39 @@ const RecuadroFlor = ({ imagenes, eleccion }) => {
 
   return (
     <>
-       <Container className="container">
-          <Row className="eleccionRow">
-            <Col md={4} xs={12}>
-              <MostrarCarrito productos={productos} setProductos={setProductos} ></MostrarCarrito>
-            </Col>
-            <Col md={8} xs={12}>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img
-                    variant="top"
-                    src={imagenActual.url}
-                    alt={`imagen ${imagenActual.id}`}
-                    className="img-fluid carruImg"
-                />
-                <Card.Body className='carruBody'>
-                  <Card.Title>{imagenActual.title}</Card.Title>
-                    <Card.Subtitle>$ {imagenActual.precio}</Card.Subtitle>
-                    <Button className='botonPri' size="sm" variant="primary" onClick={agregarProducto}>
-                      Añadir al carrito
-                    </Button>
-                  </Card.Body>
-                </Card>
-            </Col>
-           
-          </Row>
-          
-          </Container>
-      
-          
-       
-     
-    
-    
-     </>
+      <Container className="container">
+        <Row className="eleccionRow">
+          <Col md={4} xs={12}>
+            <MostrarCarrito productos={productos} setProductos={setProductos} ></MostrarCarrito>
+          </Col>
+          <Col md={8} xs={12}>
+            <Card style={{ width: '100%', overflow: 'hidden' }}>
+              <Card.Img
+                variant="top"
+                src={imagenActual?.url}
+                alt={`imagen ${imagenActual?.id}`}
+              //className="img-fluid carruImg"
+              />
+              <Card.Body className='carruBody'>
+                <Card.Title>{imagenActual?.title}</Card.Title>
+                <Card.Subtitle>$ {imagenActual?.precio}</Card.Subtitle>
+                <Button className='botonPri' size="sm" variant="primary" onClick={agregarProducto}>
+                  Añadir al carrito
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+        </Row>
+
+      </Container>
+
+
+
+
+
+
+    </>
   );
 };
 

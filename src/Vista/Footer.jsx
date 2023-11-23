@@ -1,21 +1,14 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import "./vista.css";
+import "../vista.css";
 const Footer = () => {
-    const imagenUrl = '../Img/LOGIN.png'; 
 
-    const estiloImagen = {
-      backgroundImage: `url(${imagenUrl})`,
-      backgroundSize: 'cover',
-      width: '10px', 
-      height: '10px', 
-      display: 'inline-block',
-      marginRight: '10px',
-    };
-
-    
   const estiloNav = {
     backgroundColor: '#944672', // Reemplaza con el color de fondo que desees
+    width: '100%',
+    position: 'absolute',
+    bottom: 0,
+    overFlow: 'hidden'
   };
 
   const estiloNavLink = {
@@ -23,18 +16,18 @@ const Footer = () => {
   };
 
   return (
-    <div>
-      <Nav className="justify-content-center sesion" style={estiloNav} activeKey="/home">
+    <div style={estiloNav}>
+      <Nav className="justify-content-center sesion" activeKey="/home">
         <Nav.Item className="sesion">
           <Nav.Link href="#" style={estiloNavLink}>
-           Creado Noguera Julieta / Marcelo Torres
+            Creado Noguera Julieta / Marcelo Torres
           </Nav.Link>
           <Nav.Link href="#" style={estiloNavLink}>
-          CIU/UNIVERSIDAD NACIONAL DE HURLINGHAM
+            CIU/UNIVERSIDAD NACIONAL DE HURLINGHAM
           </Nav.Link>
         </Nav.Item>
-       
-       </Nav>
+
+      </Nav>
     </div>
   )
 };

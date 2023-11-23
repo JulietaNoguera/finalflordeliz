@@ -1,13 +1,15 @@
 body {
   margin: 0;
-  font-family: 'Raleway','Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: 'Raleway', 'Segoe UI', Tahoma, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  flex-grow: 1;
+  position: relative;
+  min-height: 89.6vh;
+  padding-bottom: 50px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
