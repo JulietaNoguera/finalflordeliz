@@ -1,5 +1,6 @@
+/*eslint no-unused-vars: "error"*/
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Nav} from 'react-bootstrap';
 import "../vista.css";
 
 const Login = () => {

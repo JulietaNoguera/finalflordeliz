@@ -1,4 +1,5 @@
-import { useNavigate, useParams } from 'react-router-dom';
+/*eslint no-unused-vars: "error"*/
+import { useParams } from 'react-router-dom';
 import SeccionModelo from '../Modelo/SeccionModelo';
 
 const SeccionVista = () => {

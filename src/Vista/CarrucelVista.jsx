@@ -1,7 +1,7 @@
+/*eslint-disable no-unused-vars*/
 import { useState } from 'react';
 import CarrucelModelo from '../Modelo/CarrucelModelo';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useParams } from 'react-router-dom';
 import React from 'react';
 
 const CarrucelVista = () => {
