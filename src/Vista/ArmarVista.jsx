@@ -14,11 +14,6 @@ const ArmarVista = () => {
   console.log(cards)
   console.log(datos)
 
-  const handleEleccion = (eleccion) => {
-    console.log('Elección realizada:', eleccion);
-    //  carrAquí puedes realizar acciones adicionales con la elección, como agregar alito, etc.
-  };
-
   return (
     <>
       <div className='presentacion'>
