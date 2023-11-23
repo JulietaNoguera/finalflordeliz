@@ -32,6 +32,7 @@ const RecuadroFlor = ({ imagenes, eleccion }) => {
   useEffect(() => {
     const nuevoIndice = calcularNuevoIndice();
     setIndiceImagen(nuevoIndice);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [eleccion]);
 
   const imagenActual = imagenes[indiceImagen];

@@ -6,7 +6,7 @@ import React from 'react';
 
 const CarrucelVista = () => {
 
-  const { id } = useParams();
+ 
   const [cards, setCards] = useState([
     {
       id: 1,
