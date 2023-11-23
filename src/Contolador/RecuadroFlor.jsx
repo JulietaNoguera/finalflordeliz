@@ -60,7 +60,7 @@ const RecuadroFlor = ({ imagenes, eleccion }) => {
 
     setContadorProd(contadorProd + 1);
     // Calcular el total sumando la cantidad de todos los productos seleccionados
-    const nuevoTotal = productos.reduce((total, producto) => total + producto.seleccionado, 0);
+ //   const nuevoTotal = productos.reduce((total, producto) => total + producto.seleccionado, 0);
     //setTotal(nuevoTotal);
   };
 
