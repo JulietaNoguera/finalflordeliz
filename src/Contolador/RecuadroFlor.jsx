@@ -9,7 +9,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const RecuadroFlor = ({ imagenes, eleccion }) => {
   const [indiceImagen, setIndiceImagen] = useState(0);
   const [productos, setProductos] = useState([]);
-  const [total, setTotal] = useState(0);
+  //const [total, setTotal] = useState(0);
   const [contadorProd, setContadorProd] = useState(1);
 
 
@@ -32,7 +32,7 @@ const RecuadroFlor = ({ imagenes, eleccion }) => {
   useEffect(() => {
     const nuevoIndice = calcularNuevoIndice();
     setIndiceImagen(nuevoIndice);
-  }, [eleccion, calcularNuevoIndice]);
+  }, [eleccion]);
 
   const imagenActual = imagenes[indiceImagen];
 
@@ -61,7 +61,7 @@ const RecuadroFlor = ({ imagenes, eleccion }) => {
     setContadorProd(contadorProd + 1);
     // Calcular el total sumando la cantidad de todos los productos seleccionados
     const nuevoTotal = productos.reduce((total, producto) => total + producto.seleccionado, 0);
-    setTotal(nuevoTotal);
+    //setTotal(nuevoTotal);
   };
 
   return (
