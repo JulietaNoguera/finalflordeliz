@@ -32,7 +32,7 @@ const RecuadroFlor = ({ imagenes, eleccion }) => {
   useEffect(() => {
     const nuevoIndice = calcularNuevoIndice();
     setIndiceImagen(nuevoIndice);
-  }, [eleccion]);
+  }, [eleccion, calcularNuevoIndice]);
 
   const imagenActual = imagenes[indiceImagen];
 
